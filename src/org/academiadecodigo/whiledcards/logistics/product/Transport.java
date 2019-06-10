@@ -5,6 +5,6 @@ package org.academiadecodigo.whiledcards.logistics.product;
  */
 public interface Transport {
 
-    String transportGoods();
+    void deliverGoods();
 
 }

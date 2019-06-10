@@ -5,8 +5,8 @@ package org.academiadecodigo.whiledcards.logistics.product;
  */
 public class Ship implements Transport {
 
-    public String transportGoods() {
-        return "Transporting goods by Ship.";
+    public void deliverGoods() {
+        System.out.println("Transporting goods by Ship");
     }
 
 }
