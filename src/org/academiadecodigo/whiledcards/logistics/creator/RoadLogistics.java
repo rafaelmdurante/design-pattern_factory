@@ -1,4 +1,8 @@
 package org.academiadecodigo.whiledcards.logistics.creator;
 
-public class RoadLogistics {
+/**
+ * This class will produce RoadLogistics objects (Trucks)
+ */
+public class RoadLogistics extends LogisticsFactory {
+
 }
