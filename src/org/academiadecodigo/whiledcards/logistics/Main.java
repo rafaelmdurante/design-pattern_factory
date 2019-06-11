@@ -5,7 +5,6 @@ import org.academiadecodigo.whiledcards.logistics.creator.*;
 public class Main {
 
     private static LogisticsFactory logisticsFactory;
-    private static float weight;
 
     public static void main(String[] args) {
 
@@ -20,7 +19,7 @@ public class Main {
          * Generates a weight for the purchase
          * If weight of purchase is higher than 2 tons, goods will be delivered by Ship
          */
-        weight = (float) (Math.random() * 3000);
+        float weight = (float) (Math.random() * 4000);
         System.out.println("Weight: " + String.format("%.2f", weight) + "kg");
 
         if (weight < 2000) {
@@ -32,7 +31,7 @@ public class Main {
     }
 
     static void runBusinessLogic() {
-        logisticsFactory.planDelivery(weight);
+        logisticsFactory.planDelivery();
     }
 
 }

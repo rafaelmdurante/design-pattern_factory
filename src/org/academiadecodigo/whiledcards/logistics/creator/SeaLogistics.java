@@ -8,8 +8,10 @@ import org.academiadecodigo.whiledcards.logistics.product.*;
 public class SeaLogistics extends LogisticsFactory {
 
     @Override
-    public Transport createTransport(float weight) {
+    public Transport createTransport() {
+
         return new Ship();
+
     }
 
 }

@@ -7,10 +7,10 @@ import org.academiadecodigo.whiledcards.logistics.product.*;
  */
 public abstract class LogisticsFactory {
 
-    public void planDelivery(float weight) {
+    public void planDelivery() {
 
-        Transport transport = createTransport(weight);
-        transport.deliverGoods();
+        Transport transport = createTransport();
+        transport.deliver();
 
     }
 
@@ -18,5 +18,5 @@ public abstract class LogisticsFactory {
      * SubClasses must override this method in order to create specific transport objects
      * @return
      */
-    public abstract Transport createTransport(float weight);
+    public abstract Transport createTransport();
 }

@@ -8,17 +8,9 @@ import org.academiadecodigo.whiledcards.logistics.product.*;
 public class RoadLogistics extends LogisticsFactory {
 
     @Override
-    public Transport createTransport(float weight) {
+    public Transport createTransport() {
 
-        Transport roadLogistics;
-
-        if (weight < 800) {
-            roadLogistics = new CargoCar();
-        } else {
-            roadLogistics = new Truck();
-        }
-
-        return roadLogistics;
+        return new Truck();
 
     }
 
